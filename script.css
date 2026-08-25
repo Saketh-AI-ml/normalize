@@ -1,0 +1,377 @@
+/* =========================
+   JAVASCRIPT COMPONENTS
+========================= */
+
+.no-results {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    color: #606060;
+}
+
+.no-results i {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.no-results h2 {
+    margin-bottom: 10px;
+}
+
+
+/* VIDEO MENU */
+
+.video-menu {
+    position: absolute;
+
+    right: 0;
+    top: 42px;
+
+    width: 220px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+
+    overflow: hidden;
+}
+
+.video-menu div {
+    padding: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 14px;
+}
+
+.video-menu div:hover {
+    background: #f2f2f2;
+}
+
+
+/* NOTIFICATION */
+
+.notification-panel {
+    position: fixed;
+
+    top: 60px;
+    right: 80px;
+
+    width: 350px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.25);
+
+    z-index: 2000;
+
+    padding: 20px;
+}
+
+.notification-panel h3 {
+    margin-bottom: 15px;
+}
+
+.notification {
+    padding: 15px 5px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+
+/* WATCH PAGE */
+
+.watch-page {
+    max-width: 1100px;
+
+    margin: 25px auto;
+
+    padding-bottom: 50px;
+}
+
+.watch-video {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.watch-video img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0.75;
+}
+
+.fake-play {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.watch-title {
+    font-size: 24px;
+
+    margin: 20px 0;
+}
+
+.watch-actions {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.watch-channel {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.watch-channel p {
+    color: #606060;
+
+    font-size: 13px;
+}
+
+.subscribe-btn {
+    margin-left: 20px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #0f0f0f;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+.actions button {
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #f2f2f2;
+
+    cursor: pointer;
+
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+}
+
+.actions button:hover {
+    background: #ddd;
+}
+
+.like-btn.liked {
+    background: #dbeafe;
+}
+
+.description {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #f2f2f2;
+
+    border-radius: 12px;
+
+    line-height: 1.6;
+}
+
+.description p {
+    margin-top: 10px;
+}
+
+.back-home {
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #0f0f0f;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+    background: #0f0f0f;
+
+    color: white;
+}
+
+.dark-mode .header,
+.dark-mode .sidebar,
+.dark-mode .categories {
+    background: #0f0f0f;
+
+    color: white;
+}
+
+.dark-mode .side-item:hover {
+    background: #272727;
+}
+
+.dark-mode .active {
+    background: #272727;
+}
+
+.dark-mode .category {
+    background: #272727;
+
+    color: white;
+}
+
+.dark-mode .active-category {
+    background: white;
+
+    color: black;
+}
+
+.dark-mode .video-details p {
+    color: #aaa;
+}
+
+.dark-mode .video-menu,
+.dark-mode .notification-panel {
+    background: #212121;
+
+    color: white;
+}
+
+.dark-mode .video-menu div:hover {
+    background: #333;
+}
+
+.dark-mode .notification {
+    border-color: #444;
+}
+
+.dark-mode .description {
+    background: #272727;
+}
+
+.dark-mode .actions button {
+    background: #272727;
+
+    color: white;
+}
+
+.dark-mode .actions button:hover {
+    background: #444;
+}
+
+.dark-mode .back-home {
+    background: white;
+
+    color: black;
+}
+
+
+/* MOBILE WATCH PAGE */
+
+@media (max-width: 700px) {
+
+    .watch-page {
+        margin: 10px 0;
+    }
+
+    .watch-title {
+        font-size: 18px;
+    }
+
+    .watch-actions {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .actions {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+    .notification-panel {
+        right: 10px;
+
+        width: calc(100% - 20px);
+    }
+
+}
