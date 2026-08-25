@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YouTube Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="normalize.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="logo">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+
+        </div>
+
+
+        <div class="search-area">
+
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <button class="mic-btn">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <button class="header-icon">
+                <i class="fa-solid fa-video"></i>
+            </button>
+
+            <button class="header-icon">
+                <i class="fa-solid fa-bell"></i>
+            </button>
+
+            <div class="profile">
+                S
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="side-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-play"></i>
+            <span>Shorts</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-tv"></i>
+            <span>Subscriptions</span>
+        </div>
+
+        <hr>
+
+        <h3>You</h3>
+
+        <div class="side-item">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>History</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-list"></i>
+            <span>Playlists</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-video"></i>
+            <span>Your videos</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-regular fa-clock"></i>
+            <span>Watch later</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <span>Liked videos</span>
+        </div>
+
+        <hr>
+
+        <h3>Explore</h3>
+
+        <div class="side-item">
+            <i class="fa-solid fa-fire"></i>
+            <span>Trending</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-music"></i>
+            <span>Music</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-film"></i>
+            <span>Movies</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Gaming</span>
+        </div>
+
+        <div class="side-item">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>News</span>
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main">
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <button class="category active-category">
+                All
+            </button>
+
+            <button class="category">
+                Music
+            </button>
+
+            <button class="category">
+                Live
+            </button>
+
+            <button class="category">
+                Gaming
+            </button>
+
+            <button class="category">
+                Programming
+            </button>
+
+            <button class="category">
+                Artificial Intelligence
+            </button>
+
+            <button class="category">
+                Web Development
+            </button>
+
+            <button class="category">
+                Data Science
+            </button>
+
+            <button class="category">
+                Python
+            </button>
+
+            <button class="category">
+                News
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= VIDEO GRID ================= -->
+
+        <section class="video-grid">
+
+
+            <!-- VIDEO 1 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                        alt="Programming">
+
+                    <span class="duration">
+                        12:45
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        A
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Learn Python Programming From Zero to Advanced
+                        </h2>
+
+                        <p>
+                            Code Academy
+                        </p>
+
+                        <p>
+                            1.2M views • 2 days ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 2 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80"
+                        alt="Coding">
+
+                    <span class="duration">
+                        18:32
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        T
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            How I Became a Software Engineer
+                        </h2>
+
+                        <p>
+                            Tech World
+                        </p>
+
+                        <p>
+                            845K views • 1 week ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 3 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                        alt="AI">
+
+                    <span class="duration">
+                        25:18
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        A
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Artificial Intelligence Explained Simply
+                        </h2>
+
+                        <p>
+                            AI Explained
+                        </p>
+
+                        <p>
+                            2.8M views • 3 days ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 4 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                        alt="Code">
+
+                    <span class="duration">
+                        35:21
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        C
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Build a Full Stack Website From Scratch
+                        </h2>
+
+                        <p>
+                            Code With Me
+                        </p>
+
+                        <p>
+                            560K views • 5 days ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 5 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=800&q=80"
+                        alt="Python">
+
+                    <span class="duration">
+                        14:10
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        P
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Python DSA Roadmap for Beginners
+                        </h2>
+
+                        <p>
+                            Programming Hub
+                        </p>
+
+                        <p>
+                            920K views • 4 days ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 6 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80"
+                        alt="Data Science">
+
+                    <span class="duration">
+                        22:47
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        D
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Data Science Complete Roadmap 2026
+                        </h2>
+
+                        <p>
+                            Data School
+                        </p>
+
+                        <p>
+                            1.5M views • 1 month ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 7 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                        alt="JavaScript">
+
+                    <span class="duration">
+                        19:54
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        J
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            JavaScript Projects You Should Build
+                        </h2>
+
+                        <p>
+                            JavaScript Mastery
+                        </p>
+
+                        <p>
+                            730K views • 6 days ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 8 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                        alt="Cloud">
+
+                    <span class="duration">
+                        28:16
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        C
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Cloud Computing Full Course
+                        </h2>
+
+                        <p>
+                            Cloud Academy
+                        </p>
+
+                        <p>
+                            2.1M views • 2 weeks ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 9 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                        alt="Developer">
+
+                    <span class="duration">
+                        11:38
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        D
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Day in the Life of a Software Developer
+                        </h2>
+
+                        <p>
+                            Developer Life
+                        </p>
+
+                        <p>
+                            3.4M views • 3 weeks ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 10 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                        alt="Analytics">
+
+                    <span class="duration">
+                        16:40
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        D
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            SQL for Data Analytics
+                        </h2>
+
+                        <p>
+                            Data Analytics Pro
+                        </p>
+
+                        <p>
+                            680K views • 1 week ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 11 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+                        alt="Programming">
+
+                    <span class="duration">
+                        20:22
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        C
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Top 10 Programming Skills in 2026
+                        </h2>
+
+                        <p>
+                            Coding World
+                        </p>
+
+                        <p>
+                            1.9M views • 4 days ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- VIDEO 12 -->
+
+            <article class="video-card">
+
+                <div class="thumbnail">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+                        alt="Machine Learning">
+
+                    <span class="duration">
+                        31:05
+                    </span>
+
+                </div>
+
+                <div class="video-info">
+
+                    <div class="channel-avatar">
+                        M
+                    </div>
+
+                    <div class="video-details">
+
+                        <h2>
+                            Machine Learning Complete Roadmap
+                        </h2>
+
+                        <p>
+                            ML Academy
+                        </p>
+
+                        <p>
+                            1.7M views • 2 weeks ago
+                        </p>
+
+                    </div>
+
+                    <button class="more-btn">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,720 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #0f0f0f;
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 64px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+
+    background: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+
+/* LEFT */
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    min-width: 180px;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background: #f2f2f2;
+}
+
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    letter-spacing: -1px;
+}
+
+.logo i {
+    color: #ff0000;
+    font-size: 30px;
+}
+
+
+
+/* SEARCH */
+
+.search-area {
+    display: flex;
+    align-items: center;
+
+    width: 45%;
+
+    gap: 12px;
+}
+
+.search-box {
+    height: 42px;
+
+    flex: 1;
+
+    display: flex;
+
+    border: 1px solid #ccc;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+.search-box input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    padding: 0 18px;
+
+    font-size: 16px;
+}
+
+.search-box button {
+    width: 65px;
+
+    border: none;
+    border-left: 1px solid #ddd;
+
+    background: #f8f8f8;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #eee;
+}
+
+
+
+/* MICROPHONE */
+
+.mic-btn {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f2f2f2;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.mic-btn:hover {
+    background: #ddd;
+}
+
+
+
+/* HEADER RIGHT */
+
+.header-right {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 180px;
+
+    justify-content: flex-end;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.header-icon:hover {
+    background: #f2f2f2;
+}
+
+
+
+/* PROFILE */
+
+.profile {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1976d2;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 240px;
+
+    height: calc(100vh - 64px);
+
+    position: fixed;
+
+    top: 64px;
+    left: 0;
+
+    overflow-y: auto;
+
+    padding: 12px;
+
+    background: white;
+}
+
+.side-item {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.side-item:hover {
+    background: #f2f2f2;
+}
+
+.side-item i {
+    width: 22px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+.active {
+    background: #f2f2f2;
+
+    font-weight: bold;
+}
+
+.sidebar hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 15px 0;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+
+    padding: 8px 15px;
+
+    margin-bottom: 5px;
+}
+
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    margin-left: 240px;
+
+    padding-top: 64px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    position: sticky;
+
+    top: 64px;
+
+    background: white;
+
+    z-index: 500;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    border: none;
+
+    background: #f2f2f2;
+
+    padding: 9px 15px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.category:hover {
+    background: #ddd;
+}
+
+.active-category {
+    background: #0f0f0f;
+
+    color: white;
+}
+
+
+
+/* =========================
+   VIDEO GRID
+========================= */
+
+.video-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 38px 20px;
+
+    padding-top: 20px;
+}
+
+
+
+/* =========================
+   VIDEO CARD
+========================= */
+
+.video-card {
+    cursor: pointer;
+
+    min-width: 0;
+}
+
+
+
+/* THUMBNAIL */
+
+.thumbnail {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #ddd;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s;
+}
+
+.video-card:hover .thumbnail img {
+    transform: scale(1.03);
+}
+
+
+
+/* DURATION */
+
+.duration {
+    position: absolute;
+
+    right: 7px;
+    bottom: 7px;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    color: white;
+
+    padding: 4px 6px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+}
+
+
+
+/* VIDEO INFO */
+
+.video-info {
+    display: flex;
+
+    gap: 12px;
+
+    padding-top: 12px;
+
+    position: relative;
+}
+
+
+
+/* CHANNEL AVATAR */
+
+.channel-avatar {
+    width: 38px;
+    height: 38px;
+
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #555;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+
+/* DETAILS */
+
+.video-details {
+    padding-right: 20px;
+}
+
+.video-details h2 {
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+.video-details p {
+    color: #606060;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+
+/* MORE BUTTON */
+
+.more-btn {
+    position: absolute;
+
+    right: 0;
+    top: 8px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    background: transparent;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background: #eee;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+
+    .video-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 80px;
+    }
+
+    .sidebar .side-item {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 5px;
+
+        height: 70px;
+
+        padding: 5px;
+
+        font-size: 11px;
+    }
+
+    .sidebar .side-item i {
+        font-size: 20px;
+    }
+
+    .sidebar h3,
+    .sidebar hr {
+        display: none;
+    }
+
+    .main {
+        margin-left: 80px;
+    }
+
+    .video-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 0 10px;
+    }
+
+    .header-left {
+        min-width: auto;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .search-area {
+        width: auto;
+
+        flex: 1;
+
+        margin-left: 10px;
+    }
+
+    .search-box {
+        border: none;
+
+        width: 40px;
+
+        flex: none;
+    }
+
+    .search-box input {
+        display: none;
+    }
+
+    .search-box button {
+        border: none;
+
+        width: 40px;
+
+        background: transparent;
+    }
+
+    .mic-btn {
+        display: none;
+    }
+
+    .header-right {
+        min-width: auto;
+
+        gap: 3px;
+    }
+
+    .header-icon:first-child {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .categories {
+        top: 64px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .thumbnail {
+        border-radius: 8px;
+    }
+
+}
+
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .profile {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header {
+        height: 58px;
+    }
+
+    .main {
+        padding-top: 58px;
+    }
+
+    .categories {
+        top: 58px;
+    }
+
+}
